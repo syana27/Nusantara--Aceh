@@ -1,0 +1,1072 @@
+# MASTER PROMPT – MEMBANGUN WEBSITE E-COMMERCE NUSANTARA FULL-STACK
+
+Bertindaklah sebagai Senior Full-Stack Developer, Database Architect, UI/UX Designer, dan Security Engineer. Saya ingin membangun website e-commerce profesional bernama **NUSANTARA – Kerajinan & Batik Aceh untuk Dunia**.
+
+Saya tidak ingin website yang hanya berupa tampilan atau prototype. Saya membutuhkan aplikasi e-commerce full-stack yang memiliki frontend, backend, database permanen, autentikasi, penyimpanan gambar, dashboard admin, dan sistem pemesanan yang benar-benar berfungsi.
+
+Bangun aplikasi secara menyeluruh, bukan hanya memberikan contoh kode atau rancangan.
+
+## 1. IDENTITAS DAN KONSEP WEBSITE
+
+Nama website: Nusantara
+
+Tagline: Kerajinan & Batik Aceh untuk Dunia.
+
+Jenis website: E-commerce produk lokal khas Aceh.
+
+Tujuan website:
+- Memasarkan batik dan kerajinan khas Aceh secara online.
+- Memperkenalkan motif dan budaya Aceh kepada masyarakat luas.
+- Memudahkan pelanggan melihat, mencari, dan membeli produk.
+- Membantu admin mengelola produk, stok, pelanggan, dan transaksi.
+- Menyediakan sistem pemesanan yang mudah dan aman.
+
+Target pengguna:
+1. Pelanggan umum.
+2. Wisatawan.
+3. Pecinta batik dan produk tradisional.
+4. Masyarakat luar Aceh.
+5. Admin atau pengelola toko.
+
+Gunakan bahasa Indonesia sebagai bahasa utama.
+
+Gunakan format mata uang Rupiah (IDR) dan format tanggal Indonesia.
+
+## 2. TEKNOLOGI DAN ARSITEKTUR
+
+Gunakan stack full-stack bawaan Freebuff Web. Prioritaskan:
+- React untuk frontend.
+- Convex untuk database, backend functions, queries, mutations, dan real-time updates.
+- Sistem autentikasi bawaan Freebuff.
+- File storage bawaan untuk foto produk dan gambar lainnya.
+- Hosting bawaan Freebuff.
+
+Jika project sudah memiliki kode sebelumnya, periksa seluruh struktur project dan lanjutkan dari project tersebut. Pertahankan identitas desain dan fitur yang sudah ada, tetapi perbaiki arsitektur serta implementasinya.
+
+Jangan menggunakan localStorage sebagai database utama.
+
+localStorage hanya boleh digunakan untuk kebutuhan UI sementara, bukan untuk menyimpan akun, stok, transaksi, atau data bisnis yang harus permanen.
+
+Semua data penting harus tersimpan di database.
+
+Gunakan struktur kode yang modular, konsisten, mudah dikembangkan, dan memiliki validasi frontend maupun backend.
+
+## 3. DESAIN DAN TAMPILAN WEBSITE
+
+Pertahankan desain Nusantara dengan konsep tradisional modern, elegan, bersih, dan profesional.
+
+Palet warna:
+- Cokelat tua: #54280F.
+- Cokelat: #7A3E16.
+- Krem: #FFF4E8.
+- Emas: #C99A45.
+- Putih: #FFFFFF.
+- Hitam: #111111 untuk teks input dan teks utama yang membutuhkan kontras.
+
+Gunakan:
+- Font serif elegan untuk judul.
+- Font sans-serif yang mudah dibaca untuk isi.
+- Foto produk berkualitas tinggi.
+- Layout bersih dan tidak terlalu ramai.
+- Navigasi yang mudah digunakan.
+- Tombol dengan ukuran dan warna konsisten.
+- Animasi ringan dan tidak berlebihan.
+
+PENTING:
+- Jangan sampai ada tulisan yang bertumpuk atau muncul dua kali.
+- Pastikan seluruh teks terlihat jelas.
+- Semua input yang diketik pengguna harus berwarna hitam.
+- Placeholder boleh berwarna abu-abu.
+- Pastikan kontras teks dan latar belakang baik.
+- Jangan menggunakan gambar yang sudah memiliki tulisan sebagai banner utama.
+- Pastikan tidak ada tombol dekoratif yang sebenarnya tidak berfungsi.
+
+Website harus responsive pada desktop, tablet, dan smartphone.
+
+## 4. HALAMAN WEBSITE PELANGGAN
+
+Buat halaman berikut:
+
+### A. Beranda
+
+Tampilkan:
+- Header dan logo Nusantara.
+- Navigasi Beranda, Kategori, Katalog, Tentang Kami, Kontak, dan Lacak Pesanan.
+- Tombol Login dan ikon keranjang.
+- Hero banner dengan foto batik atau produk khas Aceh.
+- Judul "Pesona Batik Aceh untuk Dunia".
+- Deskripsi singkat toko.
+- Tombol "Jelajahi Koleksi".
+- Kategori produk unggulan.
+- Produk terbaru.
+- Produk terlaris.
+- Bagian keunggulan toko.
+- Tentang Nusantara.
+- Testimoni pelanggan yang hanya ditampilkan jika merupakan ulasan nyata.
+- FAQ singkat.
+- Footer berisi kontak dan media sosial.
+
+### B. Kategori
+
+Buat kategori:
+1. Baju dan Atasan.
+2. Rok.
+3. Dress.
+4. Kain Batik Aceh.
+5. Selendang dan Hijab.
+6. Tas dan Aksesori.
+7. Oleh-oleh dan Kerajinan.
+
+Setiap kategori harus terhubung dengan data produk di database.
+
+Ketika kategori dipilih, tampilkan produk yang sesuai tanpa harus memuat ulang seluruh website.
+
+Admin harus dapat menambahkan, mengubah, mengaktifkan, dan menonaktifkan kategori.
+
+### C. Katalog
+
+Tampilkan semua produk aktif dari database.
+
+Setiap kartu produk berisi:
+- Foto utama.
+- Nama produk.
+- Kategori.
+- Motif.
+- Harga.
+- Harga diskon jika ada.
+- Informasi stok.
+- Tombol Detail.
+- Tombol Tambah ke Keranjang.
+
+Sediakan:
+- Pencarian produk.
+- Filter kategori.
+- Filter rentang harga.
+- Filter ketersediaan stok.
+- Pengurutan harga terendah.
+- Pengurutan harga tertinggi.
+- Pengurutan produk terbaru.
+- Pengurutan produk terlaris.
+
+Gunakan pagination atau infinite loading jika produk semakin banyak.
+
+### D. Pencarian
+
+Fitur pencarian harus benar-benar berfungsi.
+
+Pencarian harus dapat menemukan produk berdasarkan:
+- Nama produk.
+- Kategori.
+- Motif.
+- Deskripsi produk.
+- Kata kunci yang relevan.
+
+Pencarian tidak boleh hanya mencari teks yang sedang terlihat di halaman.
+
+Ketika pengguna mencari "baju", tampilkan produk kategori baju.
+
+Ketika pengguna mencari "rok", tampilkan produk rok.
+
+Ketika pengguna mencari "Bungong Jeumpa", tampilkan produk dengan motif tersebut.
+
+Setelah pencarian dilakukan, arahkan pengguna ke katalog dan tampilkan hasilnya.
+
+Jika produk tidak ditemukan, tampilkan pesan "Produk tidak ditemukan".
+
+Sediakan tombol untuk menghapus kata pencarian dan mengembalikan seluruh katalog.
+
+### E. Detail Produk
+
+Setiap produk harus memiliki halaman detail.
+
+Informasi yang ditampilkan:
+- Nama produk.
+- Foto utama.
+- Galeri foto tambahan.
+- Deskripsi lengkap.
+- Harga.
+- Harga diskon.
+- Kategori.
+- Motif.
+- Pilihan ukuran.
+- Pilihan warna.
+- Stok tersedia.
+- Jumlah pembelian.
+- Informasi bahan jika tersedia.
+- Informasi perawatan jika tersedia.
+- Tombol Tambah ke Keranjang.
+- Produk terkait.
+
+Pastikan pelanggan tidak dapat memilih jumlah melebihi stok.
+
+### F. Login dan Registrasi
+
+Buat sistem autentikasi sungguhan menggunakan layanan autentikasi bawaan.
+
+Fitur:
+- Registrasi akun.
+- Login.
+- Logout.
+- Validasi email.
+- Validasi password.
+- Pengelolaan sesi.
+- Halaman profil pelanggan.
+- Pengelolaan alamat pelanggan.
+
+Jangan menyimpan password dalam bentuk teks biasa.
+
+Jangan membuat login palsu yang hanya mengubah tampilan halaman.
+
+Gunakan autentikasi yang benar dan proteksi halaman berdasarkan sesi pengguna.
+
+Sediakan pesan kesalahan yang mudah dipahami.
+
+### G. Keranjang Belanja
+
+Keranjang harus tersimpan di database dan terhubung dengan akun pelanggan.
+
+Fitur:
+- Menambahkan produk.
+- Mengubah jumlah produk.
+- Menghapus produk.
+- Memilih ukuran dan warna.
+- Menampilkan foto dan nama produk.
+- Menampilkan harga satuan.
+- Menampilkan subtotal.
+- Menampilkan total sementara.
+- Memeriksa stok terbaru.
+
+Pastikan produk dengan kombinasi varian yang berbeda dapat dibedakan dalam keranjang.
+
+### H. Checkout
+
+Buat halaman checkout profesional.
+
+Data yang diperlukan:
+- Nama penerima.
+- Email.
+- Nomor WhatsApp.
+- Alamat lengkap.
+- Provinsi.
+- Kota atau kabupaten.
+- Kecamatan.
+- Kode pos.
+- Catatan pesanan.
+
+Tampilkan:
+- Ringkasan produk.
+- Jumlah setiap produk.
+- Harga produk.
+- Subtotal.
+- Ongkos kirim.
+- Diskon jika tersedia.
+- Total pembayaran.
+
+Sebelum pesanan dibuat, backend wajib memeriksa kembali:
+- Identitas pelanggan.
+- Produk yang dipesan.
+- Harga terbaru.
+- Varian produk.
+- Stok tersedia.
+- Jumlah pembelian.
+
+Jangan pernah mempercayai total harga yang dikirim dari frontend.
+
+Hitung total transaksi kembali di backend.
+
+Buat nomor pesanan unik untuk setiap transaksi.
+
+Jika proses checkout gagal, jangan mengurangi stok secara permanen.
+
+Gunakan mekanisme reservasi atau pengurangan stok yang aman untuk mencegah overselling.
+
+### I. Pembayaran
+
+Buat sistem pembayaran dengan struktur yang memungkinkan integrasi payment gateway di masa depan.
+
+Untuk versi awal, sediakan:
+1. Transfer bank manual.
+2. Konfirmasi pembayaran melalui WhatsApp.
+3. Upload bukti transfer.
+4. Verifikasi pembayaran oleh admin.
+
+Status pembayaran:
+- Menunggu pembayaran.
+- Menunggu verifikasi.
+- Dibayar.
+- Ditolak.
+- Dikembalikan.
+
+Jangan mengaku bahwa pembayaran otomatis telah aktif jika payment gateway belum benar-benar terhubung.
+
+Buat antarmuka pembayaran yang dapat dikembangkan untuk integrasi payment gateway resmi di kemudian hari.
+
+Jangan memasukkan API key atau secret key langsung ke frontend.
+
+### J. Lacak Pesanan
+
+Pelanggan dapat memasukkan nomor pesanan untuk melihat status transaksi.
+
+Status pesanan:
+1. Menunggu konfirmasi.
+2. Menunggu pembayaran.
+3. Pembayaran diverifikasi.
+4. Pesanan diproses.
+5. Pesanan dikirim.
+6. Pesanan selesai.
+7. Pesanan dibatalkan.
+
+Tampilkan:
+- Nomor pesanan.
+- Tanggal pemesanan.
+- Daftar produk.
+- Total pembayaran.
+- Status pembayaran.
+- Status pesanan.
+- Nomor resi jika tersedia.
+- Riwayat perubahan status.
+
+Pastikan data pesanan hanya dapat diakses oleh pemilik pesanan atau admin yang berwenang.
+
+Jangan hanya menampilkan status berdasarkan nomor pesanan tanpa memeriksa hak akses pengguna.
+
+### K. Tentang Kami
+
+Buat halaman yang menjelaskan:
+- Profil Nusantara.
+- Tujuan usaha.
+- Komitmen memperkenalkan produk lokal.
+- Keunikan batik dan kerajinan Aceh.
+- Nilai budaya yang diangkat.
+
+### L. Kontak dan FAQ
+
+Gunakan informasi kontak berikut:
+
+Instagram: @syana.lbs
+
+Instagram URL: https://www.instagram.com/syana.lbs/
+
+TikTok: @syana.lbs
+
+TikTok URL: https://www.tiktok.com/@syana.lbs
+
+Email: syaharaninajwa01@gmail.com
+
+Email URL: mailto:syaharaninajwa01@gmail.com
+
+Nomor WhatsApp: gunakan placeholder konfigurasi yang mudah diganti. Jangan mengarang nomor WhatsApp toko.
+
+Tambahkan FAQ mengenai:
+- Cara membeli produk.
+- Cara melakukan pembayaran.
+- Pilihan pengiriman.
+- Cara melacak pesanan.
+- Kebijakan pembatalan.
+- Pengembalian produk.
+- Cara menghubungi admin.
+
+## 5. DASHBOARD ADMIN
+
+Buat dashboard admin terpisah dari halaman pelanggan.
+
+Dashboard hanya dapat diakses oleh pengguna dengan role admin.
+
+Jangan memberikan role admin melalui registrasi publik.
+
+Role admin harus ditetapkan melalui konfigurasi server atau proses administrasi yang aman.
+
+### A. Dashboard Utama
+
+Tampilkan:
+- Total produk.
+- Total pelanggan.
+- Total pesanan.
+- Pesanan menunggu konfirmasi.
+- Pesanan menunggu pembayaran.
+- Pesanan diproses.
+- Total penjualan.
+- Produk terlaris.
+- Grafik penjualan harian dan bulanan.
+- Aktivitas terbaru.
+
+Semua angka harus berasal dari database, bukan angka statis.
+
+### B. Manajemen Produk
+
+Admin dapat:
+- Menambahkan produk.
+- Mengubah produk.
+- Menghapus atau mengarsipkan produk.
+- Mengunggah foto produk.
+- Menghapus foto.
+- Mengatur foto utama.
+- Mengatur kategori.
+- Mengatur motif.
+- Mengatur harga.
+- Mengatur harga diskon.
+- Mengatur stok.
+- Mengatur ukuran dan warna.
+- Mengatur status aktif atau tidak aktif.
+
+Gunakan file storage bawaan untuk menyimpan foto produk.
+
+Jangan hanya menyimpan gambar dalam bentuk URL acak yang tidak terkelola.
+
+### C. Manajemen Kategori
+
+Admin dapat:
+- Membuat kategori.
+- Mengubah kategori.
+- Menghapus kategori yang tidak digunakan.
+- Mengatur gambar kategori.
+- Mengatur urutan tampilan.
+- Mengaktifkan atau menonaktifkan kategori.
+
+### D. Manajemen Pesanan
+
+Admin dapat:
+- Melihat semua pesanan.
+- Mencari pesanan berdasarkan nomor.
+- Memfilter pesanan berdasarkan status.
+- Melihat informasi pelanggan.
+- Melihat rincian produk.
+- Memverifikasi pembayaran.
+- Memperbarui status pesanan.
+- Memasukkan nomor resi.
+- Membatalkan pesanan dengan alasan.
+- Melihat riwayat perubahan status.
+
+Setiap perubahan penting harus dicatat.
+
+### E. Manajemen Pelanggan
+
+Admin dapat melihat:
+- Nama pelanggan.
+- Email.
+- Nomor WhatsApp.
+- Tanggal registrasi.
+- Riwayat pembelian.
+
+Batasi informasi yang dapat dilihat berdasarkan kebutuhan operasional dan hak akses.
+
+### F. Pengaturan Toko
+
+Admin dapat mengubah:
+- Nama toko.
+- Logo.
+- Banner.
+- Tagline.
+- Email.
+- Instagram.
+- TikTok.
+- Nomor WhatsApp.
+- Informasi rekening bank.
+- Alamat toko.
+- Kebijakan pengiriman.
+- Kebijakan pengembalian.
+- Informasi toko lainnya.
+
+## 6. DESAIN DATABASE LENGKAP
+
+Rancang database dengan relasi yang konsisten, validasi, indeks pencarian, dan aturan keamanan.
+
+Gunakan schema database Convex yang sesuai dengan stack bawaan Freebuff.
+
+Buat tabel atau collection berikut:
+
+### 1. users
+
+Menyimpan profil pengguna.
+
+Field:
+- name.
+- email.
+- phone.
+- role: customer atau admin.
+- avatarStorageId.
+- isActive.
+- createdAt.
+- updatedAt.
+
+Hubungkan profil dengan identitas autentikasi bawaan.
+
+Jangan membuat sistem password sendiri jika layanan autentikasi sudah tersedia.
+
+### 2. categories
+
+Field:
+- name.
+- slug.
+- description.
+- imageStorageId.
+- isActive.
+- sortOrder.
+- createdAt.
+- updatedAt.
+
+Slug harus unik.
+
+### 3. products
+
+Field:
+- name.
+- slug.
+- description.
+- categoryId.
+- motif.
+- material.
+- careInstructions.
+- price.
+- discountPrice.
+- sku.
+- stock.
+- soldCount.
+- isActive.
+- isFeatured.
+- createdAt.
+- updatedAt.
+
+Harga harus menggunakan integer dalam satuan Rupiah, bukan floating point.
+
+SKU dan slug harus unik.
+
+### 4. productImages
+
+Field:
+- productId.
+- storageId.
+- altText.
+- isPrimary.
+- sortOrder.
+- createdAt.
+
+Setiap produk dapat memiliki beberapa foto.
+
+Gunakan file storage bawaan.
+
+### 5. productVariants
+
+Field:
+- productId.
+- size.
+- color.
+- sku.
+- stock.
+- priceAdjustment.
+- isActive.
+
+Produk yang tidak memiliki varian dapat menggunakan konfigurasi default.
+
+### 6. carts
+
+Field:
+- userId.
+- createdAt.
+- updatedAt.
+
+Satu pelanggan memiliki satu keranjang aktif.
+
+### 7. cartItems
+
+Field:
+- cartId.
+- productId.
+- variantId.
+- quantity.
+- createdAt.
+- updatedAt.
+
+Pastikan kombinasi produk dan varian tidak menimbulkan duplikasi item yang tidak diinginkan.
+
+### 8. addresses
+
+Field:
+- userId.
+- recipientName.
+- phone.
+- addressLine.
+- province.
+- city.
+- district.
+- postalCode.
+- isDefault.
+- createdAt.
+- updatedAt.
+
+### 9. orders
+
+Field:
+- orderNumber.
+- userId.
+- customerName.
+- customerEmail.
+- customerPhone.
+- shippingAddressSnapshot.
+- subtotal.
+- shippingCost.
+- discountAmount.
+- totalAmount.
+- paymentStatus.
+- orderStatus.
+- customerNote.
+- createdAt.
+- updatedAt.
+
+orderNumber harus unik.
+
+Gunakan snapshot alamat agar perubahan alamat pelanggan tidak mengubah alamat pesanan lama.
+
+### 10. orderItems
+
+Field:
+- orderId.
+- productId.
+- productNameSnapshot.
+- productImageSnapshot.
+- skuSnapshot.
+- variantSnapshot.
+- unitPrice.
+- quantity.
+- subtotal.
+
+Data harus tetap akurat walaupun produk asli diubah atau dihapus setelah transaksi.
+
+### 11. payments
+
+Field:
+- orderId.
+- paymentMethod.
+- paymentReference.
+- amount.
+- proofStorageId.
+- paymentStatus.
+- verifiedBy.
+- verifiedAt.
+- adminNote.
+- createdAt.
+- updatedAt.
+
+Jangan menyimpan data kartu pembayaran atau informasi sensitif yang tidak dibutuhkan.
+
+### 12. shipments
+
+Field:
+- orderId.
+- courierName.
+- serviceName.
+- trackingNumber.
+- shippingCost.
+- shipmentStatus.
+- shippedAt.
+- deliveredAt.
+- createdAt.
+- updatedAt.
+
+### 13. orderStatusHistory
+
+Field:
+- orderId.
+- previousStatus.
+- newStatus.
+- changedBy.
+- note.
+- createdAt.
+
+### 14. reviews
+
+Field:
+- userId.
+- productId.
+- orderId.
+- rating.
+- comment.
+- isVerifiedPurchase.
+- isPublished.
+- createdAt.
+- updatedAt.
+
+Hanya pelanggan yang memenuhi ketentuan pembelian yang dapat membuat ulasan terverifikasi.
+
+### 15. coupons
+
+Field:
+- code.
+- description.
+- discountType.
+- discountValue.
+- minimumPurchase.
+- maximumDiscount.
+- usageLimit.
+- usedCount.
+- startAt.
+- endAt.
+- isActive.
+- createdAt.
+- updatedAt.
+
+### 16. storeSettings
+
+Field:
+- storeName.
+- tagline.
+- logoStorageId.
+- email.
+- instagram.
+- tiktok.
+- whatsapp.
+- bankInformation.
+- storeAddress.
+- shippingPolicy.
+- returnPolicy.
+- updatedAt.
+
+### 17. auditLogs
+
+Field:
+- actorUserId.
+- action.
+- entityType.
+- entityId.
+- description.
+- createdAt.
+
+Catat aktivitas admin yang penting, terutama perubahan harga, stok, pembayaran, dan status pesanan.
+
+## 7. RELASI DATABASE
+
+Terapkan relasi berikut:
+
+- users memiliki banyak addresses.
+- users memiliki satu cart aktif.
+- carts memiliki banyak cartItems.
+- categories memiliki banyak products.
+- products memiliki banyak productImages.
+- products memiliki banyak productVariants.
+- products dapat memiliki banyak reviews.
+- users dapat memiliki banyak orders.
+- orders memiliki banyak orderItems.
+- orders memiliki satu atau lebih catatan pembayaran sesuai kebutuhan.
+- orders memiliki informasi shipment.
+- orders memiliki banyak orderStatusHistory.
+- admin dapat menghasilkan banyak auditLogs.
+
+Gunakan ID referensi database yang konsisten.
+
+Pastikan semua relasi dapat diakses dengan query yang efisien.
+
+Buat indeks untuk:
+- Email pengguna.
+- Role pengguna.
+- Slug kategori.
+- Slug produk.
+- SKU produk.
+- CategoryId produk.
+- Status produk.
+- UserId keranjang.
+- OrderNumber.
+- UserId pesanan.
+- Status pesanan.
+- Status pembayaran.
+- ProductId ulasan.
+- Kode kupon.
+
+Gunakan indeks dan pencarian yang sesuai dengan kemampuan Convex.
+
+## 8. ATURAN BISNIS DAN KEAMANAN DATABASE
+
+Ini merupakan bagian yang sangat penting.
+
+Terapkan aturan berikut:
+
+1. Pelanggan hanya dapat membaca dan mengubah profil miliknya sendiri.
+2. Pelanggan hanya dapat membaca dan mengubah keranjang miliknya sendiri.
+3. Pelanggan hanya dapat melihat pesanan miliknya sendiri.
+4. Pelanggan tidak dapat mengubah harga produk.
+5. Pelanggan tidak dapat mengubah stok.
+6. Pelanggan tidak dapat mengubah status pembayaran menjadi lunas.
+7. Pelanggan tidak dapat mengubah status pesanan menjadi selesai.
+8. Hanya admin yang dapat mengelola produk.
+9. Hanya admin yang dapat mengelola kategori.
+10. Hanya admin yang dapat memverifikasi pembayaran.
+11. Hanya admin yang dapat memperbarui status pesanan secara administratif.
+12. Semua operasi sensitif harus divalidasi di backend.
+13. Jangan mengandalkan validasi frontend untuk keamanan.
+14. Jangan mengekspos secret key atau kredensial backend di frontend.
+15. Jangan mengizinkan pengguna biasa mengubah role menjadi admin.
+16. Lindungi endpoint dan fungsi backend dari akses tanpa autentikasi.
+17. Terapkan pembatasan percobaan login dan perlindungan terhadap spam jika didukung.
+18. Gunakan validasi file gambar berdasarkan tipe dan ukuran.
+19. Pastikan pengguna tidak dapat mengunggah file berbahaya sebagai gambar produk.
+20. Jangan tampilkan informasi pribadi pelanggan kepada pengguna lain.
+
+## 9. MANAJEMEN STOK DAN TRANSAKSI
+
+Buat sistem stok yang konsisten.
+
+Ketentuan:
+- Stok berkurang sesuai kebijakan transaksi yang ditetapkan.
+- Stok tidak boleh negatif.
+- Dua pelanggan tidak boleh membeli stok terakhir secara bersamaan sehingga stok menjadi negatif.
+- Periksa stok kembali pada saat checkout.
+- Batalkan reservasi atau kembalikan stok jika pesanan dibatalkan sesuai aturan.
+- Catat perubahan stok.
+- Hindari pengurangan stok ganda.
+- Pastikan perubahan stok dan pembuatan pesanan dilakukan secara aman dan konsisten.
+
+Sediakan riwayat pergerakan stok agar admin dapat mengetahui perubahan persediaan.
+
+## 10. DATA AWAL DAN FOTO PRODUK
+
+Isi database awal dengan minimal 16 produk contoh bertema batik dan kerajinan Aceh.
+
+Gunakan kategori dan produk seperti:
+- Tunik Batik Motif Rencong.
+- Kemeja Batik Aceh.
+- Gamis Batik Aceh.
+- Rok Batik Aceh.
+- Rok Lilit Motif Pucuk Rebung.
+- Kain Sarung Motif Aceh.
+- Kain Batik Aceh.
+- Pashmina Batik Aceh.
+- Selendang Songket Aceh.
+- Tas Motif Aceh.
+- Aksesori Khas Aceh.
+- Produk kerajinan khas Aceh lainnya.
+
+Setiap produk harus memiliki:
+- Nama.
+- Deskripsi.
+- Kategori.
+- Motif.
+- Harga.
+- Stok.
+- SKU.
+- Foto utama.
+- Minimal 2 foto tambahan jika tersedia.
+
+Gunakan gambar yang relevan dan berkualitas baik.
+
+Jangan menggunakan foto yang menyesatkan atau mengklaim produk tersebut merupakan produk asli buatan Aceh apabila sumbernya belum terverifikasi.
+
+Jika belum tersedia foto produk asli, gunakan gambar ilustrasi yang diberi keterangan sebagai gambar contoh.
+
+Simpan gambar menggunakan file storage bawaan.
+
+Buat data awal yang dapat diubah oleh admin.
+
+Jangan membuat data produk hanya dalam array hardcoded frontend.
+
+## 11. PENGATURAN ADMIN PERTAMA
+
+Buat proses bootstrap admin pertama yang aman.
+
+Ketentuan:
+- Jangan membuat akun admin default dengan password yang diketahui publik.
+- Jangan memberikan role admin kepada semua pengguna.
+- Gunakan mekanisme konfigurasi server atau proses penetapan admin yang aman.
+- Pastikan hanya admin yang sudah terverifikasi dapat mengakses dashboard.
+- Jika belum ada admin, tampilkan petunjuk konfigurasi awal tanpa membuka akses admin kepada publik.
+
+## 12. INTEGRASI EKSTERNAL
+
+Siapkan struktur agar dapat dikembangkan dengan:
+
+### WhatsApp
+- Tombol kontak penjual.
+- Konfirmasi pesanan.
+- Pengiriman ringkasan pesanan.
+- Nomor WhatsApp diambil dari storeSettings.
+
+### Payment Gateway
+Siapkan arsitektur integrasi payment gateway.
+
+Jangan membuat pembayaran palsu.
+
+Jika belum ada kredensial, gunakan pembayaran transfer manual dan verifikasi admin.
+
+### Pengiriman
+Siapkan struktur integrasi jasa pengiriman.
+
+Jika API belum tersedia, admin dapat memasukkan nama kurir, biaya pengiriman, dan nomor resi secara manual.
+
+Jangan menampilkan estimasi ongkir atau status tracking palsu.
+
+## 13. PENGALAMAN PENGGUNA
+
+Pastikan:
+- Navigasi mudah dipahami.
+- Pencarian bekerja.
+- Filter bekerja.
+- Keranjang bekerja.
+- Checkout bekerja.
+- Formulir memberikan validasi.
+- Tombol memiliki fungsi nyata.
+- Loading state ditampilkan saat proses berlangsung.
+- Error state ditampilkan jika terjadi kesalahan.
+- Empty state ditampilkan jika belum ada data.
+- Pesan sukses ditampilkan setelah operasi berhasil.
+- Pengguna mendapatkan konfirmasi sebelum menghapus data penting.
+
+Gunakan Bahasa Indonesia yang baik, sederhana, dan konsisten.
+
+## 14. SEO DAN PERFORMA
+
+Terapkan:
+- Judul halaman yang sesuai.
+- Meta description.
+- URL yang mudah dibaca.
+- Sitemap.
+- Robots.txt.
+- Open Graph metadata.
+- Alt text untuk foto produk.
+- Optimasi gambar.
+- Lazy loading.
+- Responsive images.
+- Loading state yang baik.
+- Penanganan error.
+- Struktur heading yang benar.
+
+## 15. PENGUJIAN WAJIB
+
+Setelah seluruh aplikasi selesai dibuat, jalankan pengujian end-to-end.
+
+Uji skenario berikut:
+
+### Pengujian pelanggan
+1. Membuka halaman Beranda.
+2. Membuka kategori.
+3. Mencari produk berdasarkan nama.
+4. Mencari produk berdasarkan motif.
+5. Menggunakan filter.
+6. Mengurutkan harga.
+7. Membuka detail produk.
+8. Mendaftar akun.
+9. Login.
+10. Logout.
+11. Menambahkan produk ke keranjang.
+12. Mengubah jumlah produk.
+13. Menghapus produk.
+14. Melakukan checkout.
+15. Mengunggah bukti pembayaran.
+16. Melihat status pesanan.
+17. Membuka tautan Instagram.
+18. Membuka tautan TikTok.
+19. Mengirim email melalui tautan kontak.
+
+### Pengujian admin
+1. Login sebagai admin.
+2. Membuka dashboard.
+3. Menambahkan produk.
+4. Mengedit produk.
+5. Menghapus atau mengarsipkan produk.
+6. Mengunggah gambar.
+7. Mengatur stok.
+8. Mengelola kategori.
+9. Melihat pesanan.
+10. Memverifikasi pembayaran.
+11. Mengubah status pesanan.
+12. Memasukkan nomor resi.
+13. Melihat laporan penjualan.
+
+### Pengujian keamanan
+1. Pelanggan tidak dapat membuka dashboard admin.
+2. Pelanggan tidak dapat mengubah harga.
+3. Pelanggan tidak dapat mengubah stok.
+4. Pelanggan tidak dapat melihat pesanan orang lain.
+5. Pelanggan tidak dapat memverifikasi pembayaran.
+6. Pengguna tidak dapat membuat akun admin melalui registrasi biasa.
+7. Validasi backend menolak data transaksi yang tidak sesuai.
+8. Sistem mencegah stok negatif.
+9. File yang tidak valid ditolak.
+10. Secret key tidak muncul di frontend.
+
+### Pengujian responsivitas
+Uji tampilan pada:
+- Desktop.
+- Laptop.
+- Tablet.
+- Smartphone Android.
+- Smartphone iOS.
+
+Perbaiki seluruh error yang ditemukan.
+
+## 16. KRITERIA SELESAI
+
+Website baru boleh dinyatakan selesai jika:
+
+1. Frontend dan backend terhubung.
+2. Database benar-benar aktif.
+3. Data produk tersimpan permanen.
+4. Foto produk tersimpan di file storage.
+5. Registrasi dan login benar-benar berfungsi.
+6. Role admin dan pelanggan berjalan dengan benar.
+7. Dashboard admin dapat digunakan.
+8. CRUD produk berfungsi.
+9. CRUD kategori berfungsi.
+10. Pencarian dan filter bekerja.
+11. Keranjang tersimpan dan dapat digunakan.
+12. Checkout menghasilkan pesanan di database.
+13. Stok dikelola secara konsisten.
+14. Admin dapat memverifikasi pembayaran.
+15. Pelanggan dapat melihat status pesanan miliknya.
+16. Semua halaman responsive.
+17. Tidak ada tombol utama yang tidak berfungsi.
+18. Tidak ada data transaksi penting yang hanya disimpan di localStorage.
+19. Tidak ada error kritis pada console atau backend.
+20. Seluruh pengujian utama berhasil.
+
+## 17. INSTRUKSI PELAKSANAAN UNTUK FREEBUFF
+
+Kerjakan aplikasi ini secara langsung dan bertahap.
+
+Urutan pekerjaan:
+
+TAHAP 1:
+Periksa project dan pahami struktur yang tersedia. Buat arsitektur aplikasi dan database.
+
+TAHAP 2:
+Buat schema database lengkap, indeks, relasi, validasi, dan backend functions.
+
+TAHAP 3:
+Buat autentikasi, role pelanggan, role admin, dan proteksi akses.
+
+TAHAP 4:
+Bangun frontend pelanggan dengan seluruh halaman e-commerce.
+
+TAHAP 5:
+Bangun dashboard admin dan seluruh fitur manajemen.
+
+TAHAP 6:
+Hubungkan frontend dengan database dan backend.
+
+TAHAP 7:
+Tambahkan data awal, kategori, produk, dan gambar.
+
+TAHAP 8:
+Implementasikan keranjang, checkout, pembayaran manual, dan pelacakan pesanan.
+
+TAHAP 9:
+Jalankan pengujian fungsional, keamanan, dan responsivitas.
+
+TAHAP 10:
+Perbaiki semua error dan pastikan aplikasi dapat berjalan.
+
+Jangan berhenti setelah membuat desain atau halaman utama. Lanjutkan sampai seluruh fungsi utama terhubung dengan database dan dapat diuji.
+
+Jika terdapat fitur yang memerlukan API key, kredensial, nomor rekening, atau informasi bisnis yang belum tersedia, buat konfigurasi yang aman dan tandai sebagai belum dikonfigurasi. Jangan mengarang kredensial atau menyatakan integrasi telah berhasil jika belum benar-benar terhubung.
+
+Jangan mengganti fitur dengan simulasi atau data statis tanpa menjelaskan keterbatasannya.
+
+Jika terdapat keterbatasan teknis pada stack bawaan Freebuff, jelaskan dan implementasikan alternatif yang paling aman dan sesuai.
+
+Setelah selesai:
+- Tampilkan ringkasan arsitektur.
+- Tampilkan daftar tabel atau collection database.
+- Tampilkan fitur yang berhasil dibuat.
+- Tampilkan fitur yang masih membutuhkan konfigurasi.
+- Tampilkan hasil pengujian.
+- Tampilkan cara membuat akun admin pertama.
+- Pastikan aplikasi dapat dipreview dan dipublikasikan.
+
+**HASIL AKHIR YANG DIINGINKAN: WEBSITE E-COMMERCE NUSANTARA YANG PROFESIONAL, RESPONSIVE, AMAN, MEMILIKI DATABASE PERMANEN, DAN SIAP DIKEMBANGKAN MENJADI TOKO ONLINE SUNGGUHAN.**

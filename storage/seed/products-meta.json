@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Blouse Batik Bungong Jeumpa",
+    "category": "Baju",
+    "price": 185000,
+    "old": 220000,
+    "motif": "Motif Bungong Jeumpa",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-1.jpg",
+    "description": "Blouse Batik Bungong Jeumpa dengan Motif Bungong Jeumpa, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Rok Batik Pucuk Rebung",
+    "category": "Rok",
+    "price": 165000,
+    "old": 190000,
+    "motif": "Motif Pucuk Rebung",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-2.jpg",
+    "description": "Rok Batik Pucuk Rebung dengan Motif Pucuk Rebung, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Dress Motif Pintu Aceh",
+    "category": "Dress",
+    "price": 275000,
+    "old": 310000,
+    "motif": "Motif Pintu Aceh",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-3.jpg",
+    "description": "Dress Motif Pintu Aceh dengan Motif Pintu Aceh, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Kain Batik Aceh Premium",
+    "category": "Kain",
+    "price": 225000,
+    "old": 250000,
+    "motif": "Motif Pucuk Rebung",
+    "sizes": "2 meter, 2.5 meter",
+    "image": "/storage/seed/product-4.jpg",
+    "description": "Kain Batik Aceh Premium dengan Motif Pucuk Rebung, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Selendang Bungong Jeumpa",
+    "category": "Selendang",
+    "price": 95000,
+    "old": 115000,
+    "motif": "Motif Bungong Jeumpa",
+    "sizes": "All size",
+    "image": "/storage/seed/product-5.jpg",
+    "description": "Selendang Bungong Jeumpa dengan Motif Bungong Jeumpa, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Atasan Batik Pintu Aceh",
+    "category": "Baju",
+    "price": 195000,
+    "old": 225000,
+    "motif": "Motif Pintu Aceh",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-6.jpg",
+    "description": "Atasan Batik Pintu Aceh dengan Motif Pintu Aceh, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Rok Batik Bungong Jeumpa",
+    "category": "Rok",
+    "price": 175000,
+    "old": 200000,
+    "motif": "Motif Bungong Jeumpa",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-7.jpg",
+    "description": "Rok Batik Bungong Jeumpa dengan Motif Bungong Jeumpa, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Kain Selendang Motif Aceh",
+    "category": "Selendang",
+    "price": 120000,
+    "old": 145000,
+    "motif": "Motif khas Aceh",
+    "sizes": "All size",
+    "image": "/storage/seed/product-8.jpg",
+    "description": "Kain Selendang Motif Aceh dengan Motif khas Aceh, pilihan busana dan kerajinan bernuansa Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Tunik Batik Motif Rencong",
+    "category": "Baju",
+    "price": 210000,
+    "old": 245000,
+    "motif": "Motif Rencong",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-9.jpg",
+    "description": "Tunik bernuansa Aceh untuk tampilan santai dan rapi.",
+    "stock": 15
+  },
+  {
+    "name": "Rok Lilit Motif Pucuk Rebung",
+    "category": "Rok",
+    "price": 155000,
+    "old": 180000,
+    "motif": "Motif Pucuk Rebung",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-10.jpg",
+    "description": "Rok lilit dengan sentuhan motif tradisional.",
+    "stock": 15
+  },
+  {
+    "name": "Gamis Batik Aceh Elegan",
+    "category": "Dress",
+    "price": 295000,
+    "old": 330000,
+    "motif": "Motif Bungong Jeumpa",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-11.jpg",
+    "description": "Gamis dengan inspirasi motif bunga khas Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Kain Sarung Motif Pintu Aceh",
+    "category": "Kain",
+    "price": 185000,
+    "old": 215000,
+    "motif": "Motif Pintu Aceh",
+    "sizes": "All size",
+    "image": "/storage/seed/product-12.jpg",
+    "description": "Kain bermotif geometris untuk koleksi busana.",
+    "stock": 15
+  },
+  {
+    "name": "Pashmina Batik Aceh",
+    "category": "Selendang",
+    "price": 110000,
+    "old": 130000,
+    "motif": "Motif Bungong Jeumpa",
+    "sizes": "All size",
+    "image": "/storage/seed/product-13.jpg",
+    "description": "Pashmina bermotif yang mudah dipadukan.",
+    "stock": 15
+  },
+  {
+    "name": "Kemeja Batik Aceh Pria",
+    "category": "Baju",
+    "price": 220000,
+    "old": 255000,
+    "motif": "Motif Pintu Aceh",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-14.jpg",
+    "description": "Kemeja batik untuk acara formal maupun kasual.",
+    "stock": 15
+  },
+  {
+    "name": "Rok Maxi Batik Aceh",
+    "category": "Rok",
+    "price": 190000,
+    "old": 220000,
+    "motif": "Motif khas Aceh",
+    "sizes": "S, M, L, XL",
+    "image": "/storage/seed/product-15.jpg",
+    "description": "Rok maxi dengan nuansa warna dan motif Aceh.",
+    "stock": 15
+  },
+  {
+    "name": "Selendang Songket Aceh",
+    "category": "Selendang",
+    "price": 135000,
+    "old": 155000,
+    "motif": "Motif Aceh",
+    "sizes": "All size",
+    "image": "/storage/seed/product-16.jpg",
+    "description": "Selendang bernuansa tradisional sebagai pelengkap busana.",
+    "stock": 15
+  }
+]

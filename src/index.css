@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --nusantara-dark: #54280F;
+  --nusantara-brown: #7A3E16;
+  --nusantara-cream: #FFF4E8;
+  --nusantara-gold: #C99A45;
+  --nusantara-white: #FFFFFF;
+  --nusantara-ink: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #111111;
+  background-color: #FFF4E8;
+}
+
+h1, h2, h3, .font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Memastikan seluruh teks input pengguna selalu berwarna hitam kontras tinggi */
+input,
+textarea,
+select {
+  color: #111111;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #737373;
+  opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111111;
+}
